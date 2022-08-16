@@ -1,0 +1,342 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Fira Sans',Arial, sans-serif;
+    color:rgb(47, 47, 47);
+    font-size : 22px;
+    line-height : 1.5;
+}
+
+/* Text style */
+
+ h1{
+    font-size: 1.75rem;
+    font-weight: 950;
+    line-height: 1.5;
+    text-align: center;
+ 
+}
+
+h2{
+    font-size: 1.75rem;
+    font-weight: 900;
+    line-height: 1.5;
+
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1.5;
+   
+}
+
+
+p{
+    font-weight: 400;
+    line-height: 1.5;
+ 
+}
+
+/* Button and image */
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* Navigation */
+
+nav{
+    padding: 2rem;
+    text-align: center;
+    background-color: #b6d7f7;
+}
+
+.logo{
+    height:2rem;
+    width: auto;
+}
+
+nav li{
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+/* Card */
+
+.main-content{
+    margin: 2.5rem 0rem;
+}
+
+
+.flexbox{
+    
+    margin-top: 0.75rem;
+    padding: 0 0.75rem;
+    justify-content: space-between;
+}
+
+.card{
+    margin: rem 0.75rem;
+    
+}
+
+/* Article */
+
+.subject .grid-item{
+    padding: 4rem 1.5rem 3.5rem 1.5rem;
+}
+
+.subject p{
+    padding-top: 1rem;
+}
+
+.subject .p ul{
+    padding-top: 1rem;
+}
+
+/* footer */
+
+footer{
+    background: rgb(181, 227, 243);
+    padding: 4rem 1.5rem 2rem 1.5rem;
+    
+}
+
+.social-media{
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+.icon{
+    display: flex;
+    justify-content:left;
+}
+
+.social-icon{
+    width: 10%;
+    margin-bottom: 4rem;
+    margin-right: 3rem;
+
+}
+
+.copyright p{
+    padding-top: 2rem;
+    font-weight: 1rem;
+    color:rgb(26, 26, 26);
+}
+
+figcaption{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.resource{
+    padding-top: 2rem;
+    color:rgb(47, 47, 47)
+}
+
+.resource p a{
+    columns: black;
+}
+
+/* Responsive */
+
+
+@media only screen and (min-width: 48em){
+
+    nav{
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logo{
+        height: 1.25rem;
+        width: auto;
+    }
+
+    nav li{
+        display: inline-block;
+        margin-top: 0;
+        padding-left: 2rem
+    }
+
+    .list-category{
+        padding: 3rem 0rem;
+        border-bottom: 1px solid #dcdcdc;
+    
+    }
+
+    .list-category:nth-child(3){
+        border-bottom: none;
+    }
+
+    .flexbox{
+        display: flex;
+        margin-top: 0.75rem;
+        flex-wrap: wrap;
+        padding: 0 0.75rem;
+        justify-content: space-between;
+    }
+    
+    .card{
+        margin: 1.5rem 0.75rem;
+        flex-basis: calc(45% - 60px/2.5);
+    }
+
+    footer{
+       
+        padding: 0;
+        margin:0 auto;
+        text-align: center;
+
+        
+    }
+
+    .icon{
+        width: 10%;
+        margin:0 auto;
+        text-align: center;    
+    }
+
+
+}
+
+@media only screen and (min-width: 60em) {
+
+
+    .wrapper{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .masthead p{
+        font-size: 1.125rem;
+    }
+
+    .card{
+        margin: 1.5rem 0.75rem;
+        flex-basis: calc(50% - 1.5rem);
+    }
+
+
+
+    .subject{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 3rem 0;
+        grid-column-gap: 2rem;
+        align-items: center;
+
+    }
+
+    .subject .grid-item{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        padding: 0;
+        padding-right: 4rem;
+    }
+
+    .subject img{
+        grid-column:2/ 3;
+        grid-row: 1 / 2;
+    }
+
+    .icon{
+        width: 20%;
+        margin:0 auto;
+        text-align: center;
+
+        
+    }
+
+    footer{
+       
+        padding: 0;
+        margin:0 auto;
+        text-align: center;
+        
+    }
+
+    
+
+
+}
+
+@media only screen and (min-width: 72.5em){
+
+    p{
+        font-size: 1rem;
+    }
+
+    h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .flexbox{
+        padding: 0 1rem;
+        justify-content: space-between;
+    }
+
+    .card{
+        flex-basis: calc(25% - 0.82rem) ;
+        margin: 4rem 2.5rem;
+    }
+
+    .subject{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 0.5fr;
+        padding: 3rem 0;
+        grid-column-gap: 2rem;
+        align-items: left;
+
+    }
+
+
+    .main-footer{
+    
+        padding: 4rem 2rem 2rem 2rem;
+    
+        
+    }
+
+
+    
+}
+
+
+
+
